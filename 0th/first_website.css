@@ -1,0 +1,32 @@
+body {
+    font-family: courier;
+    margin: 0px;
+}
+
+
+.header {
+  text-align: right;
+  background: #333333;
+  font-size: 10px;
+}
+
+img {
+    float: left;
+}
+
+a,.introduction h2 {
+    color: #ff0099;
+}
+
+div {
+    padding: 1px 10%;
+}
+
+
+.introduction {
+    font-size: 20px;
+}
+
+.part-two {
+    text-align: center;
+}
