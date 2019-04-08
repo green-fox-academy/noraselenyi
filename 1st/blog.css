@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    background-image: url("60397_star_wars_stormtrooper_storm_trooper_art.jpg");
+}
+
+.set-size {
+    margin: 0px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+h2 {
+    padding-top: 20px;
+}
+
+
+
+.header {
+    background-color: gray;
+    padding-bottom: 5px;
+    position: fixed;
+    width: 100vw;
+}
+
+
+div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.small-input {
+    width: 25%;
+    height: 25px;
+    font-size: 15px;
+}
+
+.large-input {
+    width: 75%;
+    height: 150px;
+    font-size: 15px;
+}
+
+.tobox {
+    border: 1px solid black;
+    margin-bottom: 40px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    width: 50%;
+}
+
+.title {
+    font-size: 25px;
+}
+
+
+.google {
+    font-size: 20px;
+    color: plum;
+    padding-left: 50%;
+}
