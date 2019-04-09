@@ -19,12 +19,12 @@ for (let i = 0; i < ListA.length; i++){
 
 
 // Remove Durian from List B
-for (let i = 0; i < ListA.length; i++){
+for (let i = 0; i < ListB.length; i++){
     if (ListA[i]==="Durian"){
-        delete ListA[i];
+        delete ListB[i];
     }
 }
-console.log(ListA)
+console.log(ListB)
 
 
 // Add Kiwifruit to List A after the 4th element
