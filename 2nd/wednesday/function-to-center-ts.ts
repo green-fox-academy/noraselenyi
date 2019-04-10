@@ -24,4 +24,3 @@ for (let i = 0; i <= 600; i+=20){
     linedrawer(i, 600);
     linedrawer(600, i);
 }
-

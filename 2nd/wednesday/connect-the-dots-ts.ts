@@ -11,7 +11,6 @@ const ctx = canvas.getContext('2d');
 // Connect these: [[50, 100], [70, 70], [80, 90], [90, 90], [100, 70],
 // [120, 100], [85, 130], [50, 100]]
 
-
 var box = [[10, 10], [290,  10], [290, 290], [10, 290]];
 var plswork = [[50, 100], [70, 70], [80, 90], [90, 90], [100, 70], [120, 100], [85, 130], [50, 100]];
 
@@ -33,4 +32,3 @@ function connector(coord){
 
 connector(box);
 connector(plswork);
-
