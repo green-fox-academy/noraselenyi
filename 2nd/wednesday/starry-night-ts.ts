@@ -14,7 +14,6 @@ const ctx = canvas.getContext('2d');
 
 var greyshade = Math.floor(Math.random()* 255) + 0;
 
-
 ctx.fillStyle = 'rgb(' + greyshade +', ' + greyshade + ',' + greyshade +')';
 
 
