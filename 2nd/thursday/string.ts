@@ -16,3 +16,6 @@ function create_string(blabla: string): any {
     }
 }
 console.log(create_string("x tho "));
+addEventListener
+  DataTransfer
+  
