@@ -9,7 +9,6 @@ fruits.push('meggy');                                   // hozzáír, de nem bel
 
 //console.log(fruits.join('\n'));
 
-
-fs.writeFileSync('gyumik.txt', fruits.join('\n'));
+fs.writeFileSync('gyumik.txt', fruits.join('\n'));             // beleírja amit pusholtunk
 
 fs.appendFileSync('gyumik.txt', '\nbanananaaaaaaaa');
