@@ -46,4 +46,4 @@ function drawFract(p0, p1, p2, limit){
         drawTriangle(p0,p1,p2);
     }
 }
-drawFract({x: 0, y:0},{x:300, y:600},  {x:600, y:0}, 5)
+drawFract({x: 0, y:0},{x:300, y:600},  {x:600, y:0}, 10)
