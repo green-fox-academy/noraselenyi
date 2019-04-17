@@ -10,12 +10,14 @@
 const fs = require('fs');
 
 
-function fileWriter(path, word, n){
+function fileWriter(path: string , word:string, n:number){
+    try{
 
     for (let i = 0; i <= n; i++){
         fs.appendFileSync(path, word);
     }
     return fs.readFileSync('namelist.txt', 'UTF-8');
+    } catch {}
 }
 
 
