@@ -26,7 +26,7 @@ class Postit{
 
     giveInfoAboutPostit(): void{
         console.log(
-            ` Background color is: ${this.backgroundColor} the message is: ${this.text}, and the text color is: ${this.textColor}.'`);
+            `\nBackground color is: ${this.backgroundColor}, the message is: ${this.text}, and the text color is: ${this.textColor}.'`);
 
     }
 }
