@@ -11,7 +11,7 @@ export class Pokemon {
         this.effectiveAgainst = effectiveAgainst;
     }
 
-    isEffectiveAgainst(pokemon: Pokemon): boolean {
-        return this.effectiveAgainst === pokemon.type;
-    }
+        isEffectiveAgainst(pokemon: Pokemon): boolean {
+            return this.effectiveAgainst === pokemon.type;
+        }
 }
