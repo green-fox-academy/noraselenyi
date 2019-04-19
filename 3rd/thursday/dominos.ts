@@ -4,7 +4,7 @@ function initializeDominoes(): Domino[] {
     let dominoes = [];
     dominoes.push(new Domino(5, 2));
     dominoes.push(new Domino(4, 6));
-    dominoes.push(new Domino(9, 5));
+    dominoes.push(new Domino(1, 5));
     dominoes.push(new Domino(6, 7));
     dominoes.push(new Domino(2 ,4));
     dominoes.push(new Domino(7, 1));
@@ -24,22 +24,40 @@ let dominoes = initializeDominoes();
 
 //print(dominoes);
 
-let result = [];
-let starter = 0;
+let arrayOfDominos = [];
 
 for (let i = 0; i < initializeDominoes().length; i++){
-    //console.log(initializeDominoes()[i].values);
-    result.push(initializeDominoes()[i].values);
+    arrayOfDominos.push(initializeDominoes()[i].values);
 }
-//console.log(result)
+// console.log(arrayOfDominos)
+
+let result: any[] = []; 
+//result.push(arrayOfDominos[0]);
+//console.log(arrayOfDominos[0]);
+result.push(arrayOfDominos[0]);
+
+console.log(result);
+//console.log(dominoes);
+// console.log(result[0][1]);
+
+// let counter = result.length;
 
 
-for (let i = 0; i < result.length; i++){
-    for (let j = 0; j < result.length; j++){
-        //console.log(result[j][0]);
-        if (result[i][0] != result[j][1]){
-            starter = result[i][0];
+for (let i = 0; i < arrayOfDominos.length; i++){
+    for (let j = 0; j < arrayOfDominos.length; j++){
+        if (arrayOfDominos[j][0] === result[i][0]){
+            result.push(arrayOfDominos[j]);
         }
     }
+    
 }
-console.log(starter)
+
+// for (let i = 0; i < dominoes.length; i++){
+//     for (let j = 0; j < dominoes.length; j++){
+//         if (dominoes[j].getvalue('a') === result[i].getvalue('b')){
+//             result.push(dominoes[j]);
+//         }
+//     }
+    
+// }
+console.log(result);

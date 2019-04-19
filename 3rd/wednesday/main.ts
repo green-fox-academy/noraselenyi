@@ -26,11 +26,11 @@ let wildPokemon: Pokemon = new Pokemon('Oddish', 'leaf', 'water');
 function otherChoosePoke(){
     initializePokemon().forEach(pokemon => {                    // forEach. nincs return érték
         if (pokemon.isEffectiveAgainst(wildPokemon)){
-            console.log('I choose you, ' + pokemon.name)
+            console.log('\nI choose you, ' + pokemon.name)
         }
     });
 }
-console.log('I choose you, ', otherChoosePoke());
+otherChoosePoke();
 
 
 function initializePokemon(): Pokemon[] {
