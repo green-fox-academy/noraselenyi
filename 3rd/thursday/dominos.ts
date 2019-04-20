@@ -24,40 +24,38 @@ let dominoes = initializeDominoes();
 
 //print(dominoes);
 
-let arrayOfDominos = [];
+// let arrayOfDominos = [];
 
-for (let i = 0; i < initializeDominoes().length; i++){
-    arrayOfDominos.push(initializeDominoes()[i].values);
-}
+// for (let i = 0; i < initializeDominoes().length; i++){
+//     arrayOfDominos.push(initializeDominoes()[i].values);
+// }
 // console.log(arrayOfDominos)
 
 let result: any[] = []; 
 //result.push(arrayOfDominos[0]);
 //console.log(arrayOfDominos[0]);
-result.push(arrayOfDominos[0]);
+result.push(dominoes[0]);
 
-console.log(result);
 //console.log(dominoes);
 // console.log(result[0][1]);
 
-// let counter = result.length;
 
 
-for (let i = 0; i < arrayOfDominos.length; i++){
-    for (let j = 0; j < arrayOfDominos.length; j++){
-        if (arrayOfDominos[j][0] === result[i][0]){
-            result.push(arrayOfDominos[j]);
-        }
-    }
-    
-}
-
-// for (let i = 0; i < dominoes.length; i++){
-//     for (let j = 0; j < dominoes.length; j++){
-//         if (dominoes[j].getvalue('a') === result[i].getvalue('b')){
-//             result.push(dominoes[j]);
+// for (let i = 0; i < arrayOfDominos.length; i++){
+//     for (let j = 0; j < arrayOfDominos.length; j++){
+//         if (arrayOfDominos[j][0] === result[i][0]){
+//             result.push(arrayOfDominos[j]);
 //         }
 //     }
     
 // }
+
+for (let i = 0; i < dominoes.length; i++){
+    for (let j = 0; j < dominoes.length; j++){
+        if (dominoes[j].getvalue('a') === result[i].getvalue('b')){
+            result.push(dominoes[j]);
+        }
+    }
+    
+}
 console.log(result);
