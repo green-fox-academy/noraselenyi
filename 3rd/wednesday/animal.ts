@@ -10,10 +10,12 @@
 'use strict';
 
 class Animal{
+    name: string;
     hunger: number;
     thirst: number;
 
-    constructor(){
+    constructor(name: string){
+        this.name = name;
         this.hunger = 50;
         this.thirst = 50;
     }
@@ -44,11 +46,12 @@ class Animal{
     }
 
 }
+export { Animal };
+const Bunny: Animal = new Animal('Bunny');
 
-const Bunny: Animal = new Animal();
-Bunny.eat();
-console.log(Bunny);
-Bunny.drink();
-console.log(Bunny);
-Bunny.play();
-console.log(Bunny);
+// Bunny.eat();
+// console.log(Bunny);
+// Bunny.drink();
+// console.log(Bunny);
+// Bunny.play();
+// console.log(Bunny);
