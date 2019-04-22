@@ -18,11 +18,12 @@ class Sharpie{
 
     constructor(
         icolor: string,
-        iwidth: number
+        iwidth: number,
+        inkAmount:number = 100
     ){
         this.color = icolor;
         this.width = iwidth;
-        this.inkAmount = 100;
+        this.inkAmount = inkAmount;
     }
 
     use(): void{
@@ -31,7 +32,9 @@ class Sharpie{
 
 }
 
-const newSharipe: Sharpie = new Sharpie('black',5);
+export { Sharpie };
+
+const newSharipe: Sharpie = new Sharpie('black',5, 30);
 
 console.log(newSharipe);
 newSharipe.use();
