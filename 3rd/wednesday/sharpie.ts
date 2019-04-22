@@ -34,7 +34,7 @@ class Sharpie{
 
 export { Sharpie };
 
-const newSharipe: Sharpie = new Sharpie('black',5, 30);
+const newSharipe: Sharpie = new Sharpie('black',5);
 
 console.log(newSharipe);
 newSharipe.use();
