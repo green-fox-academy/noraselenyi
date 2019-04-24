@@ -18,12 +18,12 @@ class Garden{
     watering(water:number, plants:any[]){
         let counter = 0;
         for (let i = 0; i < this.plants.length; i++){
-            if (this.plants[i].needsWater === true){
+            if (this.plants[i].needsWater){
                 counter ++;
             }
         }
         for (let i = 0; i < plants.length; i++){
-            if (plants[i].needsWater === true){
+            if (plants[i].needsWater){
                 plants[i].absorb(water/counter);
                 plants[i].setWaterNeeds();
         }
@@ -32,7 +32,7 @@ class Garden{
 
     result(){
         for (let i = 0; i < this.plants.length; i++){
-            if (this.plants[i].needsWater === true){
+            if (this.plants[i].needsWater){
                 if (this.plants[i]instanceof Flower){
                     console.log('The ' +this.plants[i].color+ ' Flower ' + 'needs water' );
                 } else {
