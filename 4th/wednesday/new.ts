@@ -15,7 +15,7 @@ const myObject: myInterface = {
 
 
 
-interface personInterface {
+interface personInterface {                 // nem lehet megadni, hogy mit csináljon, mennyi legyen
     age: number,
     name: string,
     phone: number,
@@ -47,3 +47,24 @@ class Person implements personInterface, footballPlayer {     // tartozhat hozz�
 };
 
 
+
+
+
+
+            //már definiálhatjuk/ childban definiálunk
+            //több kölyök, 1 szülő
+abstract class Plant{                               // child gyűjtő, önmagában wuut
+    public abstract printStatus(): void
+}
+
+class Flower extends Plant{
+    public printStatus(): void{
+        console.log('dddd');
+    }
+}
+
+//      const plant = new Plant();                      nem lehet, mert abstract
+
+class Tree extends Plant{
+
+}
