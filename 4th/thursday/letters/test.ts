@@ -5,6 +5,9 @@ import {countLetters} from './letters';
 
 test('countletters', t => {
     t.deepEqual(countLetters('anna'), {'a':2, 'n':2});
+    t.deepEqual(countLetters('anna'), {'a':2, 'n':2});
+    t.deepEqual(countLetters('anna'), {'a':2, 'n':2});
+
     t.end();
 });
 

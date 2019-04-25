@@ -1,18 +1,18 @@
 'use strict';
 
-export function anagrams(first: string, second: string): boolean{
-    let tocheck: string = '';
-    for (let i: number = second.length-1; i >= 0; i--){
-        tocheck += second[i];
-    }
-    if (first === tocheck){
-        return true;
+export function anagrams(first: string, second: string) {
+    if (first.length === second.length){
+        let firstcounter: string = first.split('').sort().join('');
+        let secondcounter: string = second.split('').sort().join('');
+        if (firstcounter === secondcounter){
+            return true
+        } else {
+            return false
+        }
     } else {
-        return false;
+        return false
     }
 }
 
 
-
-//console.log(anagrams('anna', 'anna'));
-
+console.log(anagrams('anna', 'annn'));
