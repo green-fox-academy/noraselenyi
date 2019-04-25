@@ -9,4 +9,4 @@ export function fibo(n: number): any{
     }
 }
 
-//console.log(fibo(6));
+//console.log(fibo(10));
