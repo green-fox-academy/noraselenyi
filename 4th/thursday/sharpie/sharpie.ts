@@ -1,6 +1,5 @@
 'use strict';
 
-
 class Sharpie{
     color: string;
     width: number;

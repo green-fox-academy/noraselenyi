@@ -8,7 +8,6 @@ test('sumOf', t => {
     let x: number = operations.inkAmount
 
     t.equal(x,operations.inkAmount);
-
     t.end();
 
 });
