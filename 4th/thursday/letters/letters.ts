@@ -16,5 +16,5 @@ export function countLetters(input: string): any {
 
 
 
-//console.log(countLetters('blabla'));
+console.log(countLetters('blabla'));
 // object
