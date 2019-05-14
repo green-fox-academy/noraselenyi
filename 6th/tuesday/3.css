@@ -1,0 +1,28 @@
+.container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    /*     to the left
+    justify-content: flex-start; */
+
+    /*  to the center
+    justify-content: space-between; */
+
+    justify-content: flex-end;
+}
+
+.item {
+    background: purple;
+    align-self: center;
+    height: 12vh;
+    width: 12vh;
+    list-style-type: none;
+    /* to the left
+    margin: 3px; */
+
+    align-self: flex-end;
+    margin-left: 3px;
+}
