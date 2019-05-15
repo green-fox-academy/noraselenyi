@@ -2,13 +2,18 @@ body {
     margin: 50px;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
 .navigation {
     margin: 0px;
     height: 80px;
+    display: flex;
     background-color: purple;
     position: fixed;
     width: calc(100% - 115px);
-    display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 15px;
@@ -22,6 +27,20 @@ body {
     width: 12vh;
     margin: 6px;
 }
+
+
+
+.logo {
+    background-color: cyan;
+    list-style-type: none;
+    height: 5vh;
+    width: 5vh;
+    margin: 6px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
 
 
 .boxes{

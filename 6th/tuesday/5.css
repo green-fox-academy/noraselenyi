@@ -1,0 +1,51 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    background-color: aqua;
+    height: 80px;
+    width: 80%;
+}
+
+
+.boxes{
+    display: flex;
+    width: 80%;
+    height: 80vw;
+}
+
+
+.orange{
+    background: orange;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.red{
+    background: red;
+    margin-right: 20px;
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.purple{
+    background: purple;
+    flex-grow: 1;
+}
+
+
+.black {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+.footer {
+    background-color: blue;
+    height: 80px;
+    width: 80%;
+    bottom: 0px;
+}
