@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome!</title>
+  </head>
+  <body>
+    <h1>Things to do today</h1>
+    <ul>
+      <% for (let i = 0; i < things.length; i++) { %>
+      <li>
+        <%= things[i].name %>
+      </li>
+      <% } %>
+    </ul>
+
+    <p> <%= init %></p>
+
+
+    <h1>Cocktails</h1>
+    <table style="width:800px">
+      <tr style="background-color: black; color: white">
+        <th>NAME</th>
+        <th>PRICE</th>
+      </tr>
+
+      <% for (let i = 0; i < thingie.length; i++) { %>
+      <tr>
+        <td><h3>
+          <strong><%= thingie[i].name %></strong> <br>
+          <%= thingie[i].contains %> 
+        </h3> </td>
+        <td><h3><%= thingie[i].price %> </h3></td>
+        <% } %>
+        <br>
+      </tr>
+
+    </table>
+
+  </body>
+</html>

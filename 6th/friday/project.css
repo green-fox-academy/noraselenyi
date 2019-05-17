@@ -1,0 +1,48 @@
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color:  rgba(194, 193, 193, 0.5);
+}
+
+
+.bigpicture{
+    align-self: center;
+}
+
+
+.bigpicture > img {
+    height: 70vh;
+    width: 120vh;
+}
+
+
+.pictures {
+    justify-content: center;
+    align-self: center;
+}   
+
+.pics {
+    height: 10vh;
+    width: 10vh;
+    margin-left: 5px;
+    margin-top: 30px;
+    border: 5px solid rgb(191, 191, 191);
+    border-radius: 10%;
+}
+
+.middle{
+    align-self: center;
+    margin-top: 50px; 
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    height: 70vh;
+    width: 10vh;
+}
+
