@@ -20,3 +20,6 @@
 
 
 
+INSERT INTO Posts(title, url, score) VALUES
+('Dear JavaScript', 'http://9gag.com', 791),
+('Crockford', 'http://9gag.com', 567);
