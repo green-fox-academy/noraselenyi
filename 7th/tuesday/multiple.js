@@ -31,3 +31,4 @@ for (let i = 0; i < Object.keys(timedFruits).length; i++){
         console.log(Object.keys(timedFruits)[i])
     }, Object.values(timedFruits)[i]);
 };
+
