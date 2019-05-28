@@ -27,16 +27,20 @@ conn.connect(err => {
 //     res.sendFile(__dirname + '/reddit/reddit.html');
 // })
 
-
 app.get('/posts', (req, res) => {
-    conn.query('SELECT * FROM Posts', (err, result) => {
+    let input = req.query.voter;
+
+    conn.query(`select id, title, url, timest, score, voter, vote FROM Posts
+    inner join Votes on Votes.post_id = Posts.id where Votes.voter = "${input}"`,
+    (err, result) => {
         if (err) {
             res.status(500).json(err);
         } else {
             res.status(200).json(result);
         }
-    })
+        })
 });
+
 
 
 app.post('/posts', (req, res) => {
@@ -57,19 +61,26 @@ app.post('/posts', (req, res) => {
 
 
 app.put('/posts/:id/upvote', (req, res) => {
+    let input = req.query.voter;
     let givenID = req.params.id;
+
     conn.query('UPDATE Posts SET score = score + 1 WHERE id = ' + givenID, (err, result) => {
         if (err) {
             res.status(500).json(err);
         }
-        conn.query('SELECT * FROM Posts WHERE id = ' + givenID, (err, result) => {
+        conn.query(`INSERT INTO Votes (voter,post_id,vote) VALUES ("${input}","${givenID}",3)`, (err, result) => {
+        if (err) {
+            res.status(500).json(err);
+        }})
+        conn.query(`select DISTINCT id, title, url, timest, score, voter, vote FROM Posts
+        inner join Votes on Votes.post_id = Posts.id where Posts.id = "${givenID}"`,
+        (err, result) => {
             if (err) {
                 res.status(500).json(err);
             } else {
                 res.status(200).json(result);
-            }
-        })
-    });
+            }})
+    })
 });
 
 
@@ -127,3 +138,4 @@ app.put('/posts/:id', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is up and running on port ${PORT} 🔥`);
 });
+
