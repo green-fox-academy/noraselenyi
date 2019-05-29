@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-container">
+        <form action="/send" method="POST">
+            <h2 class="main-title">What is your favourite pet?</h2>
+            <input type="radio" name="fav" value="dog" id="dog"></input>
+            <label class="dog" for="dog">Dog</label> <br /> 
+            <input type="radio" name="fav" value="cat" id="cat"></input>
+            <label class="cat" for="cat">Cat</label> <br /> 
+            <input type="radio" name="fav" value="Viktor" id="Viktor"></input>
+            <label for="Viktor">Viktor the goldfish</label>
+
+            <h2 class="main-title">Do you want to sign up for cat facts?</h2>
+            <input type="radio" name="doyou" value="yes" id="yes"></input>
+            <label for="yes">Yes</label> <br /> 
+            <input type="radio" name="doyou" value="no" id="no"></input>
+            <label for="no">No</label><br /> 
+
+        </form>
+        <button class="signup" disabled="true">Sign up</button>
+        <button class="luvcat" disabled="true">I luv catz</button>
+    </div>
+    <script src="./frontend.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300&display=swap');
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Roboto;
+  font-weight: 100;
+}
+
+.main-title {
+  font-size: 3rem;
+}
+
+.main-container {
+  background: #f4baba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  padding: 50px 100px;
+  border-radius: 50px;
+  box-shadow: #000 20px 20px;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  height: 1rem;
+  display: block;
+}
+
+input[type="radio"] {
+  display: inline;
+}
+
+input[type="submit"] {
+  background-color: cornflowerblue;
+  height: 2rem;
+}
+
+label[for="newsletter"] {
+  display: block;
+}
+
+textarea {
+  resize: none;
+}

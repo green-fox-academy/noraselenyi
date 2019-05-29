@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="main-title">Forms</h1>
+        <form action="/send" method="POST">
+            <!-- id kell label forba -->
+            <label for="username">username</label>
+            <!-- ha value placeholder helyett, akkor alapból be lesz írva -->
+            <!-- required!! -->
+            <!-- name: objbe teszi? -->
+            <input type="text" id="username" name="username" placeholder="type name here" maxlength="10" autofocus required>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" required>
+            
+            <label for="license">license plate</label>
+            <input type="text" id="license" name="license" pattern="[A-Z]{3}-[0-9]{3}" placeholder="ABC-123" required>
+            
+            <!-- mivel ugyanaz a name, ezért csak 1et lehet választani -->
+            <!-- ha felcseréljük, felcserélődik damn -->
+            <label for="female">license plate</label>            
+            <input type="radio" name="gender" value="female" id="female"></input>
+            <label for="male">license plate</label>
+            <input type="radio" name="gender" value="male" id="male"></input>
+            <label for="other">license plate</label>
+            <input type="radio" name="gender" value="other" id="other"></input>
+
+            <label for="newsletter">wanna subscribe?</label>
+            <input type="checkbox" name="whatsnew" id="newsletter" checked></input>
+    
+
+            <label for="password">password</label>
+            <input type="password" name="password" id="password"></input>
+
+            <label for="education"></label>
+            <select name="education" id="education">
+                <!-- valuet küldi a backendbe -->
+                <option value="nope">nope</option>
+                <option value="primary school">primary school</option>
+                <option value="high school">high school</option>
+                <option value="ba">ba</option>
+                <option value="ma">ma</option>
+            </select>
+            
+            <input type="date" id="date" name="date">
+            <input type="range" id="date" name="slider">
+
+            <textarea name="bigtext" rows="5" cols="30">write stuff here</textarea>
+            <input type="submit" value="click here">
+            <button></button>
+        </form>
+    </div>
+
+</body>
+</html>
