@@ -1,0 +1,108 @@
+/* table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table th,
+table td{
+    border: solid 3px;
+}
+
+körülötte is legyen?? */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align content, items??? */
+    height: 100vh;
+    /* importált font family ide */
+
+    /* eltűnik az egér
+    cursor: none; */
+}
+
+.main-container{
+    color: white;
+    background: linear-gradient(rgb(198, 136, 198), rgb(172, 160, 253));
+    /* nincs vessző!!! */
+    padding: 50px 50px;
+    border-radius: 50px 50px 50px 0;
+    width: 60vw;
+}
+
+.education-container:last-child{
+    color:red;
+}
+
+/* > -- kizárólag az első leszármazottakat */
+.education-container > *{
+    margin-top: 20px;
+}
+
+
+.main-title{
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 0.2em;
+    transition: 0.3s letter-spacing;
+}
+
+.main-title:hover{
+    letter-spacing: 0.5em;
+    text-shadow: 10px 10px 5px black;
+}
+
+
+
+.circle {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(black, white);
+    border-radius: 100%;
+    opacity: 0.5;
+    position: relative;
+    bottom: 100px;
+    box-shadow:10px 10px white;
+
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a [href="http://greenfoxacademy.com"]{
+    color: green;
+}
+
+@media (max-width: 600px){
+    .main-container{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+
+    .circle{
+        display: none;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    a{
+        background: linear-gradient(white,yellow);
+        font-size: 3rem;
+        border-radius: 10px;
+        padding: 5px 10px;
+        color: black;
+        margin-top: 20px;
+    }
+}

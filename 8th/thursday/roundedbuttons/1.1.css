@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(43, 43, 187)
+}
+
+.item{
+  color: rgba(255, 255, 255, 0.644);
+  width: 70px;
+  margin: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border-color: rgba(0,0,0,0.3);
+}
+
+.blue{
+  background: blue;
+  box-shadow: 0 3px rgb(3, 3, 187);
+}
+
+.purple{
+  background: purple;
+  box-shadow: 0 3px rgba(128, 0, 128, 0.664);
+}
+
+.light{
+  background: rgb(101, 147, 233);
+  box-shadow: 0 3px rgba(85, 135, 228, 0.699);
+} 
+
+
+
+.item:hover{ 
+  filter: brightness(90%)
+}
+
+.item:active{ 
+  filter: brightness(110%)
+}

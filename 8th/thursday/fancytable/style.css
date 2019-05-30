@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(119, 119, 252);
+    display: flex;
+    justify-content: center;
+    color: rgb(109, 109, 109);
+}
+
+
+table{
+    margin-top: 20vh;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: rgb(209, 209, 209);
+    
+}
+
+tr:nth-child(even) { 
+    background: white; 
+  }
+
+tr:nth-child(-n+4){
+    border-bottom: solid 2px rgb(138, 138, 138);
+}
+
+td, th{
+    border-right: solid 2px rgb(138, 138, 138);
+   
+}
+
+
+
+
+thead{
+    background-color: black;
+}
+
+table th,
+table td{
+    text-align: left;
+    padding-left: 20px;
+}
+
+table tr {
+    height: 50px;
+}
