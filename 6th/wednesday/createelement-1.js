@@ -11,7 +11,7 @@ document.getElementsByTagName('ul')[0].appendChild(lighter);
 
 
 let cont = document.getElementsByClassName('container')[0];
-cont.innerHTML = 'I can add elements to the DOM!';
+cont.innerText = 'I can add elements to the DOM!';
 
 console.log(cont);
 const img = document.createElement('img');

@@ -6,16 +6,16 @@
 // melon -> after 3 seconds
 // grapes -> after 5 seconds
 
-// const timedFruits = (word,time) => {
-//     setTimeout(() => {
-//         console.log(word)
-//     }, time);
-// }
+const timedFruits = (word,time) => {
+    setTimeout(() => {
+        console.log(word)
+    }, time);
+}
 
-// timedFruits('apple', 0)
-// timedFruits('pear', 1000)
-// timedFruits('melon', 3000)
-// timedFruits('grapes', 5000)
+timedFruits('apple', 0);
+timedFruits('pear', 1000);
+timedFruits('melon', 3000);
+timedFruits('grapes', 5000);
 
 
 

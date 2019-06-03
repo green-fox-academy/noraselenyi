@@ -27,10 +27,9 @@
 
 //példány létrehozása, amin kommunikálunk
 const xhr = new XMLHttpRequest();
-//elmondjuk mit csinálunk, hogy, mivel
+//elmondjuk mit csinálunk, hogy mivel
 xhr.open('GET', 'akarmi');
 // infot csatol a gethez pl, mit akarunk:
-xhr.setRequestHeader('Accept', 'application/json');
 xhr.setRequestHeader('Accept', 'application/json');
 //csomag send
 xhr.send();

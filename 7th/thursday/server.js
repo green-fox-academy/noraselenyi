@@ -1,14 +1,14 @@
 'use strict';
 
 const express = require('express');
-const mysql = require('mysql');
 const app = express();
+app.use(express.json());
 //require('dotenv').config();
-const table = 'example';
 const PORT = 3000;
 
-app.use(express.json());
 
+const mysql = require('mysql');
+const table = 'example';
 const conn = mysql.createConnection({
   host: 'localhost',
   user: 'root',

@@ -17,11 +17,12 @@ function isPrime(num){
 function whaaaat(){
     let st1 = document.getElementsByTagName('section')[0]
     for (let i = 0; i < st1.children.length; i++){
-        if (i === st1.children.length){
-            clearTimeout(prime);
-            clearTimeout(notprime);
-        }
-        else if (isPrime(st1.children[i].innerHTML)){
+        // if (i === st1.children.length){
+        //     clearTimeout(prime);
+        //     clearTimeout(notprime);
+        // }
+        // else
+        if (isPrime(st1.children[i].innerHTML)){
             let prime = setTimeout(() => {
                 st1.children[i].setAttribute('class', 'prime')
             }, i*100);

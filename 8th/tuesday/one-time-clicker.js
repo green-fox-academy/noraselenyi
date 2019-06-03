@@ -4,11 +4,11 @@
 
 const clickme1 = document.querySelector('.first');
 
-
 clickme1.addEventListener('click', event => {
     console.log(Math.floor(Date.now() / 1000));
     clickme1.disabled = true;
 });
+
 
 
 

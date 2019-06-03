@@ -1,0 +1,68 @@
+body{
+  background-color: rgb(67, 67, 67);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.delete, .sure{
+  display: flex;
+  margin-top: 20px;
+  font-size: 2rem;
+
+}
+
+button{
+  background-color: rgb(40, 40, 40);
+  width: 80px;
+  height: 80px;
+  font-size: 3rem;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  transition: 0.5s border-radius;
+}
+
+
+button:active{
+  filter: brightness(80%)
+}
+
+.trash{
+  color: red;
+}
+
+.delete > div {
+  background-color: red;
+}
+
+.check{
+  color: green;
+}
+
+.sure > div {
+  background-color: green;
+}
+
+div {
+  line-height: 80px;
+  text-align: center;
+}
+
+.box{
+  width: 300px;
+  color: white;
+  opacity: 0;
+  transition: 0.8s opacity;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.delete:hover > button, .sure:hover > button{
+  border-radius: 10px 0px 0px 10px;
+}
+
+.delete:hover > .box, .sure:hover >.box{
+  opacity: 1;
+}
+

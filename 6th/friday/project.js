@@ -10,6 +10,14 @@ const change = (event) => {
     newpic.setAttribute('src', event.target.src);
 }
 
+
+function change(event) {
+    newpic.setAttribute('src', event.target.src);
+}
+
+
+
+
 for (let i= 0; i < pictures.length; i++){
     let pic = document.createElement('img');
     pic.setAttribute('src', pictures[i]);

@@ -1,4 +1,3 @@
-// if ()
 const len = document.getElementsByTagName('p').length;
 const items = document.getElementsByTagName('p');
 const lastclass = items[len-1].getAttribute('class');

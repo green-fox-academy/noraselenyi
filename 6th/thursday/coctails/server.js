@@ -1,8 +1,10 @@
+'use strict';
+
 const express = require('express')
 const app = express()
 const port = 3000
 app.set('view engine', 'ejs')
-app.use('/static', express.static('static'));
+
 
 const cocktails = [
   { name: 'GIN FIZZ', price: 1520, contains: ['gin', 'sugar', 'lemon juice', 'soda'], isAlcoholic: true },

@@ -1,9 +1,9 @@
 'use strict';
 
-const mapWith = (array, callback) => {
+const mapWith = (array, kisnyúl) => {
   let output = [];
   for (let i = 0; i < array.length; i++){
-    output.push(callback(array[i]))
+    output.push(kisnyúl(array[i]))
   }
   // The mapWith() function should iterate over the given array and call the callback function on every element.
   // It stores the callback return values in the output.
